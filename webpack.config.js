@@ -27,7 +27,15 @@ module.exports = {
             },
           },
         ],
-      }      
+      },
+      {
+        test: /\.(png|jpg|jpeg|svg)$/,
+        use: 'file-loader?name=[hash:base64:7].[ext]',  
+      },
+      {
+        test: /favicon\.ico$/,
+        use: 'file-loader?name=[name].[ext]',
+      }            
     ],
   },
 //   resolve: {
@@ -49,6 +57,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
         template: "src/index.html", //source html
+        favicon: './src/favicon.ico',
         minify: {
             collapseWhitespace: true,
             removeComments: true,
