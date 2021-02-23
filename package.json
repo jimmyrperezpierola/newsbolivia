@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "startold": "webpack-dev-server --entry ./src/js/app.js --output-filename ./dist/bundle.js",
-    "start": "webpack serve --mode=development --entry ./src/index.js --output-filename ./build/app.bundle.js",
+    "start": "webpack serve --mode=development --entry ./src/index.js --output-filename ./dist/app.bundle.js",
     "serve": "webpack serve --mode=development",
-    "build": "webpack",
+    "build": "webpack --mode=production",
     "dev": "webpack --mode=development -w",
     "prod": "webpack --mode=production"
   },
