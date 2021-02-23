@@ -3,8 +3,13 @@ Tutorial : https://dev.to/theenadayalan/how-to-set-up-react-js-from-scratch-with
 Ejecutar  npm install webpack -g   para instalar de manera global
 npm init --yes
 npm install webpack --save-dev      para instalar en modo dev
+
 Para usar webpack
 npm install -D webpack-cli
+
+Setup webpack
+yarn add -D webpack webpack-cli webpack-dev-server html-webpack-plugin
+
 Comandos:
 empacar: webpack app.js bundle.js //ya no sirve en webpack5, usar el path del archivo
 webpack --mode=production c:\Projects\newsbolivia\client\app.js -o bundle
@@ -46,5 +51,11 @@ Añadir a babelrc:
 }
 
 
-
+GitHub
+git init
+git add .
+git commit -m 'first commit'
+git branch -M main
+git remote add origin https://github.com/jimmyrperezpierola/newsbolivia.git
+git push -u origin main
 
