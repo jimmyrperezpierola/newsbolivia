@@ -15,6 +15,8 @@ export const HeroContainer = styled.div`
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;    
 `;
 
 export const HeroContent= styled.div`

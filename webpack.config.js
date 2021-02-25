@@ -33,6 +33,10 @@ module.exports = {
         use: 'file-loader?name=[hash:base64:7].[ext]',  
       },
       {
+        test: /vr\.jpg$/, 
+        use: 'file-loader?name=[name].[ext]',        
+      },
+      {
         test: /favicon\.ico$/,
         use: 'file-loader?name=[name].[ext]',
       }            
