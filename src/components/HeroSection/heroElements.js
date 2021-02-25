@@ -11,7 +11,7 @@ export const HeroContainer = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
-    background-image: url(${vr});
+    background: url(${vr});
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
