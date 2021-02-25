@@ -29,10 +29,6 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|jpeg|svg)$/,
-        use: 'file-loader?name=[hash:base64:7].[ext]',  
-      },
-      {
         test: /vr\.jpg$/, 
         use: 'file-loader?name=[name].[ext]',        
       },
@@ -50,13 +46,14 @@ module.exports = {
     // esto para que todas las URLs que fallen (404) devuelvan nuestro index.html
     historyApiFallback: true,
 
+    contentBase:  path.resolve(__dirname, 'dist'),
+    open: true,
+    // compress: true,
     // para que los errores en consola aparescan en un overlay en el BROWSER
     overlay: false,
-    // habilitar HMR
     hot: true, 
     port: 5000,        
-    inline: true,   
-    contentBase:  path.resolve(__dirname, 'dist')
+    inline: true
   },
   plugins: [
     new HtmlWebpackPlugin({

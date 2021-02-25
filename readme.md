@@ -82,3 +82,5 @@ npm install @material-ui/core
 React Icons
 npm install react-icons --save
 
+Adding Url-Loader to get images on prod:
+npm install url-loader --save-dev
