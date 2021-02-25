@@ -1,5 +1,3 @@
-# newsbolivia
-
 Tutorial : https://dev.to/theenadayalan/how-to-set-up-react-js-from-scratch-without-using-create-react-app-37mk
 
 Ejecutar  npm install webpack -g   para instalar de manera global
@@ -45,7 +43,6 @@ npm install --save @babel/polyfill //polifill = async Calls into Browsers
 
 --React
 yarn add react react-dom react-hot-loader
-npm install --save react-router-dom
 
 Añadir Babel .babelrc o babel.config.json segun sea el caso
 Añadir a babelrc:
@@ -61,24 +58,4 @@ git commit -m 'first commit'
 git branch -M main
 git remote add origin https://github.com/jimmyrperezpierola/newsbolivia.git
 git push -u origin main
-
-CI with Git:
-git add .
-git commit -m 'updating file'
-git push
-
-Adding ico on html
-npm install file-loader --save-dev
-
-Firebase:
-npm i firebase
-
-Styled-components
-npm i styled-components
-
-Material UI Icons
-npm install @material-ui/core
-
-React Icons
-npm install react-icons --save
 
